@@ -13,8 +13,7 @@ class PostsController < ApplicationController
   #create - is the button we're hitting when we make new post - this is what is actually "creating" it
   def create
     @post = Post.create!(post_params)
-
-    redirect_to post_path(@post)
+    redirect_to posts_url, notice: "#{@post.title} was successfully saved."
   end
 
   #def show

@@ -7,8 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <nav>
+      <button class = "post"><%= link_to "Person's Blog", posts_path %></button>
+    </nav>
 
-<h1> Persons' Blog</h1>
+    <% flash.each do |type, message| %>
+  <p class="<%= type %>"><%= message %></p>
+<% end %>
 <%= yield %>
 
 </body>
