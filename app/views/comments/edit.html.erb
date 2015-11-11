@@ -1,1 +1,9 @@
-<h1> tester here </h1>
+<%= form_for [@post, @comment] do |f| %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+
+<% end %>
+
+<%= form_for [@post, @comment], method: :delete do |f| %>
+  <%= f.submit "Delete!", class: "delete" %>
+<% end %>

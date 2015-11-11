@@ -1,5 +1,12 @@
+<h2> Comments </h2>
+
 <h2>Comments <%= link_to "(+)", new_post_comment_path %></h2>
 
-</ul>
+<ul>
 
-<p>get it to display comments hur</p>
+  <% @post.comments.each do |comment| %>
+    <li>
+      <%= link_to "#{comment.content}", post_comment_path( @post, comment ) %>
+    </li>
+  <% end %>
+</ul>
