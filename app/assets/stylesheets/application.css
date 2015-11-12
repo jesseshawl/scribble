@@ -18,20 +18,48 @@
  @import "font-awesome";
 
  html {
-   background-image: url("bamboo.jpg")
+   background-image: url("dessert.jpg");
+   background-size: 1450px 830px;
+   background-repeat: no-repeat;
  }
 
 body {
-
+font-family: 'Halant', serif;
 
 }
-h1{
-  color: red;
+
+h1 {
+  text-align: center;
+}
+h1 a{
+  color: #7F462C;
   text-align: center;
   text-decoration: none;
+  font-family: 'Poiret One', cursive;
+  font-size: 50px;
 }
+
 h2 {
   text-align: center;
+  color: #2c657f;
+}
+p{
+  color: #462718;
+}
+
+a {
+  text-decoration: none;
+  color: purple;
+}
+ul li {
+  padding: 4px;
+}
+
+ul {
+  text-align: left;
+}
+li a{
+  color:#462718
 }
 
 .edit {
@@ -48,34 +76,32 @@ ul {
 }
 
 #main_content {
-  margin: 2em;
-  width: 40%;
+  margin: 3em;
+  width: 80%;
   border: 1px solid gray;
   padding: 2em;
   border-radius: 3px;
-  background-color: #F2F2F2;
+  background-color: rgba(255, 250, 240, 0.4);
   float: right;
   border-radius: 20px;
+  -webkit-box-shadow: 0px 9px 34px 0px rgba(126,148,126,1);
+  -moz-box-shadow: 0px 9px 34px 0px rgba(126,148,126,1);
+  box-shadow: 0px 9px 34px 0px rgba(126,148,126,1);
+  /*opacity: .5;*/
 }
 
+
 #user_options {
-  float: right;
-  margin-right: 1.5em;
 
 }
 
 a .fa-plus-square {
   position: relative;
   font-size: 18px;
+  color: #422828;
 }
 a .fa-pencil {
   font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul li {
-  padding: 4px;
+  color:#422828;
+  padding: 3px;
 }

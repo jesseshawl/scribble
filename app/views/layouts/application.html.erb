@@ -5,6 +5,10 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Poiret+One|Halant' rel='stylesheet' type='text/css'>
+
+
+
 </head>
 
 <body>
@@ -22,7 +26,7 @@
   </div>
   <div id = "main_content">
     <nav>
-      <div class = "post"><%= link_to "A Magical World", posts_path %></div>
+      <h1><%= link_to "A Magical World", posts_path %></h1>
     </nav>
     <div><%= yield %></div>
   </div>
