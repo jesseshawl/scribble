@@ -1,9 +1,8 @@
-<div class = "edit"><%= link_to "(edit)", edit_post_path(@post) %></div>
 
-<h2><%= @post.title%></h2>
+<h2><%= @post.title%><%= link_to "<i class='fa fa-pencil'></i>".html_safe, edit_post_path(@post) %></h2>
 <p><%= @post.content %></p>
 
-<h2>Comments <%= link_to "(+)", new_post_comment_path(@post) %></h2>
+<h2>Comments <%= link_to "<i class='fa fa-plus-square'></i>".html_safe, new_post_comment_path(@post) %></h2>
 
 <ul>
   <% @post.comments.each do |comment| %>

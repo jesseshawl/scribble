@@ -1,4 +1,4 @@
-<h2>Posts <%= link_to "(+)", new_post_path %></h2>
+<h2>Posts <%= link_to "<i class='fa fa-plus-square'></i>".html_safe, new_post_path %></h2>
 
 <ul>
   <% @posts.each do |post| %>

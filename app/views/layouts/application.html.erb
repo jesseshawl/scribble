@@ -6,15 +6,27 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-    <nav>
-      <div class = "post"><%= link_to "Person's Blog", posts_path %></div>
-    </nav>
 
+<body>
+  <div id = "user_options">
+    <h3><%= link_to 'Signup', new_user_registration_path %></h3>
+    <h3><%= link_to 'Login', new_user_session_path %></h3>
+    <% if current_user %>
+    <h3><%= link_to 'Signout', destroy_user_session_path, :method => :delete %></h3>
+    <% else %>
+    <% end %>
     <% flash.each do |type, message| %>
-  <p class="<%= type %>"><%= message %></p>
-<% end %>
-<%= yield %>
+    <p class="<%= type %>"><%= message %></p>
+    <% end %>
+
+  </div>
+  <div id = "main_content">
+    <nav>
+      <div class = "post"><%= link_to "A Magical World", posts_path %></div>
+    </nav>
+    <div><%= yield %></div>
+  </div>
 
 </body>
+
 </html>

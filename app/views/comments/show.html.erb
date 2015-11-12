@@ -1,5 +1,5 @@
 
-<div class = "edit"><%= link_to "(edit)", edit_post_comment_path(@post, @comment) %>
-  <h2><%= @comment.content %></h2> 
+<div class = "edit"><%= link_to "<i class='fa fa-pencil'></i>".html_safe, edit_post_comment_path(@post, @comment) %>
+  <h2><%= @comment.content %></h2>
 
 <!-- <h3><%= @comment.content %></h3> -->

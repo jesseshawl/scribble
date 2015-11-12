@@ -14,23 +14,21 @@
  *= require_self
  */
 
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+
  html {
-   background-color: #F0FFF1;
+   background-image: url("bamboo.jpg")
  }
 
 body {
-  margin: 0 auto;
-  margin-top: 4em;
-  width: 50%;
-  border: 1px solid gray;
-  padding: 2em;
-  border-radius: 3px;
-  background-color: #DBFFE1;
+
 
 }
 h1{
   color: red;
   text-align: center;
+  text-decoration: none;
 }
 h2 {
   text-align: center;
@@ -47,4 +45,37 @@ h2 {
 
 ul {
   list-style-type: none;
+}
+
+#main_content {
+  margin: 2em;
+  width: 40%;
+  border: 1px solid gray;
+  padding: 2em;
+  border-radius: 3px;
+  background-color: #F2F2F2;
+  float: right;
+  border-radius: 20px;
+}
+
+#user_options {
+  float: right;
+  margin-right: 1.5em;
+
+}
+
+a .fa-plus-square {
+  position: relative;
+  font-size: 18px;
+}
+a .fa-pencil {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  padding: 4px;
 }

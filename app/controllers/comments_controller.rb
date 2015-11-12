@@ -17,7 +17,7 @@ class CommentsController < ApplicationController
     @post = Post.find(params[:post_id])
     @comment = @post.comments.create(comment_params)
 
-    redirect_to @post, notice: "#{@comment.content} was successfully saved."
+    redirect_to @post, notice: "#{@comment.content} was successfully saved as a comment."
   end
 
   #show
