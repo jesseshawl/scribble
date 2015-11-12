@@ -4,7 +4,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem "font-awesome-rails"
 #google font gem
-gem 'google-webfonts-rails', '~> 0.0.4'
 
 gem 'rails', '4.2.4'
 # Use postgresql as the database for Active Record
