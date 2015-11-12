@@ -13,12 +13,13 @@
  *= require_tree .
  *= require_self
  */
- 
+
  /*
   *= require font-awesome
   */
  html {
    background-image: url("dessert.jpg");
+   background-color: #e2f0f4;
    background-size: 1450px 830px;
    background-repeat: no-repeat;
  }
