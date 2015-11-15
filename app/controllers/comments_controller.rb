@@ -16,6 +16,7 @@ class CommentsController < ApplicationController
   def create
     @post = Post.find(params[:post_id])
     @comment = @post.comments.create(comment_params)
+    # ^^ can you think of a way to associate the user with a comment?
 
     redirect_to @post, notice: "#{@comment.content} was successfully saved as a comment."
   end
